@@ -2,3 +2,14 @@ I could not find the bug however,
 
 when coding I realized that it was always the zero index that did not get organized 
 
+But i belive the bug in the code was from     static void printArray(int[] ar) {
+        for(int n: ar){
+            System.out.print(n +" ");
+        }
+    }
+When trying to figure out what to do I added one to the code to see if maybe it was because it was going starigt to the next index
+
+However I think that the math and the process is correct I just belive that it was when the code was printing that is where it went wrong, 
+because i got the 4 to move but then the 5 was in the wrong spot 
+
+
