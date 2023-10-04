@@ -1,7 +1,14 @@
 Camal Case
 
-Time complexity
+Time complexity: O(n) This is because the code only interrogates through the whole list once 
 
 
-Space Complexity
+Space Complexity O(1) Because it only takes in the space from the data types that we have, which is only char and int
+
+
+Correctness and the Loop Invariant
+
+Time complexity: O(Logn)= it would be this time complexity because it uses a while loop
+
+Space complexity: The space complexity of this would be O(1) because we only use one data type which is int
 
