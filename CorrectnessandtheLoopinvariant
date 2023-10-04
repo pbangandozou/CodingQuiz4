@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void insertionSort(int[] A){
+        for(int j = 1; j < A.length; j++){
+            int value = A[j];
+            int i = j - 1;
+            while(i > 0 && A[i] > value){
+                A[i + 1] = A[i];
+                i = i - 1;
+            }
+            A[i + 1] = value;
+        }
+
+        printArray(A);
+    }
+
+
+    static void printArray(int[] ar) {
+        for(int n: ar){
+            System.out.print(n +" ");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] ar = new int[n];
+        for(int i=0;i<n;i++){
+            ar[i]=in.nextInt();
+        }
+        insertionSort(ar);
+    }
+}
